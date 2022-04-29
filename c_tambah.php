@@ -22,4 +22,8 @@
             $insert = $this->model->setTambah();
             Include 'tambah.php';
         }
+        public function invoke(){
+            $club = $this->model->getClub();
+            include 'tambah.php';
+        }
     }
