@@ -9,6 +9,4 @@
 	</center>
 </form>
 
-<center><a href="tambah.php"><input type="button" value="Kembali ke Tambah Club"></a></center>
-<center><a href="jadwal.php"><input type="button" value="Kembali ke Tambah Jadwal"></a></center>
-<center><a href="peringkat.php"><input type="button" value="Tampilkan Klasemen Pertandingan"></a></center>
+<center><a href="index.php"><input type="button" value="Beranda"></a></center>

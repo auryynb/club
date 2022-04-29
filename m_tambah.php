@@ -18,6 +18,16 @@
             $mysqli->query("INSERT INTO club(nama, jumlah, manager, pelatih, asal) VALUES ('$this->nama', '$this->jumlah', '$this->manager', '$this->pelatih', '$this->asal')");
 
         }
+        public function getClub(){
+            global $mysqli;
+            $rs = $mysqli->query("SELECT * FROM club");
+            $rows = array();
+            while ($row = $rs->fetch_assoc()) {
+                $rows[] = $row;
+            }
+            $this->hasil = $rows;
+            return $this->hasil;
+        }
     }
 
     

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SoccerTitle';
+    src:  url('font/SoccerLeague.ttf');
+}
+
+@font-face {
+    font-family: 'SoccerArt';
+    src:  url('font/Soccer2.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src:  url('font/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:  url('font/Raleway-Bold.ttf');
+}
+
+h1 {
+    font-family:'Raleway';
+    font-size: 80px;
+}
+body {
+    background-color: #CBC5C1;
+}
+
+.art1 {
+    font-family:'SoccerArt';
+    display: inline;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.menu .container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240ppx auto;
+}
+.menu .container .box {
+    position: relative;
+    width: calc(300px - 30px);
+    height: calc(200px - 30px);
+    background:#ff0;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
