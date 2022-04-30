@@ -4,21 +4,29 @@
 ?>
 
 <html>
-	<head></head>
-	<body>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" media="screen" href="assets/css/style.css" />
+<title>Liga PW</title>
+</head>	
+<body class="bodybg">
 		<form action="c_jadwal.php" method="POST">
 			<center>
-				<h1>Form Tambah Jadwal Pertandingan</h1>
-				Tanggal   : <input type="date" name="tanggal" required /><br><br>
-				Club 1   : <input type="text" name="club1" required /><br><br>
-				Club 2  : <input type="text" name="club2" required /><br><br>
+				<h1 class= "judul">Form Tambah</h1>
+				<h1 class= "judul1">Jadwal Pertandingan</h1>
+				<br><br><br><br>
+				<pre class="tab4">Tanggal    : <input type="date" name="tanggal" required /></pre><br><br><br>
+				<pre class="tab4">Club 1          : <input type="text" name="club1" required /></pre><br><br>
+				<pre class="tab4">Club 2          : <input type="text" name="club2" required /></pre><br>
+
 				<br><br><input type="submit" value="Tambah" name="submit" />
 			</center>
 		</form>
+		<br>
 		<center><a href="index.php"><input type="button" value="Beranda"></a></center>
 		<br><br><br>
 		<center>
-			<table border="2" cellpadding="5" cellspacing="1">
+			<table class = "tabel" border="2" cellpadding="5" cellspacing="1">
 			<tbody align="center">
 			<tr class="tablehead">
 				<td>Tanggal</td>
