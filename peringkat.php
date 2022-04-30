@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" media="screen" href="assets/css/style.css" />
+<title>Liga PW</title>
+</head>
+<body class="bodybg">
+
 <?php
  include "koneksiMVC.php";
  $rs = $mysqli->query("SELECT nama,poin,totalmenang,totalkalah,totalseri,totalgol,totalkebobol,selisihgol FROM club ORDER BY poin DESC, selisihgol DESC, totalgol DESC");
@@ -5,15 +14,17 @@
 
 <style>
     table, th, td {
+      padding: 15px;
       border: 1px solid;
+
     }
 </style>
 
 <center>
   <br>
-  <h1>Peringkat Klasemen</h1>
+  <h1 class="judul">Peringkat Klasemen</h1>
   <br>
-  <table>
+  <table class = "tabel">
     <tr>
       <th>Rank</th>
       <th>Club</th>
@@ -49,3 +60,6 @@
 </center>
 <br><br>
 <center><a href="index.php"><input type="button" value="Beranda"></a></center>
+
+</body>
+</html> 

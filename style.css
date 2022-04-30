@@ -18,37 +18,235 @@
     src:  url('font/Raleway-Bold.ttf');
 }
 
-h1 {
+.h1index {
     font-family:'Raleway';
     font-size: 80px;
-}
-body {
-    background-color: #CBC5C1;
+    color: #482426;
+    text-align: center;
+    margin-top: 75px;
+    display: inline;
 }
 
 .art1 {
     font-family:'SoccerArt';
     display: inline;
+    margin-left: 250px;
+    font-size: 80px;
+    color: #482426;
 }
+
+.art2 {
+    font-family:'SoccerArt';
+    display: inline;
+    margin-right: 200px;
+    font-size: 80px;
+    color: #482426;
+}
+
+h1 {
+    font-family:'Raleway';
+    font-size: 80px;
+    color: #482426;
+}
+
+.judul {
+    font-family:'Lato';
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.judul1 {
+    font-family:'Lato';
+    font-size: 80px;
+    margin-top: -40px;
+}
+
+
+.bodyIndex {
+    background-color:   #F2e8ce;
+}
+
+.bodybg {
+    background-color: #F2e8ce;
+}
+
 .menu {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 .menu .container {
-    position: relative;
-    width: 1200px;
-    height: 300px;
-    margin: 240ppx auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .menu .container .box {
     position: relative;
-    width: calc(300px - 30px);
-    height: calc(200px - 30px);
-    background:#ff0;
-    float: left;
-    margin: 15px;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 50px;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 10px;
+    text-align: center;
+    margin-left: 225px;
+}
+.menu .container1 .box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 225px;
+}
+.menu .container .box:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+.menu .container1 .box:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+.menu .container .box .icon {
+    position: realtive;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.menu .container1 .box .icon {
+    position: realtive;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.menu .container .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #854E4B;
+    background: #854E4B;
+}
+.menu .container .box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #854E4B;
+}
+.menu .container .box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 #E2AF91;
+    background: #E2AF91;
+}
+.menu .container .box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px #E2AF91;
+}
+.menu .container1 .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #E2AF91;
+    background: #E2AF91;
+}
+.menu .container1 .box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #E2AF91;
+}
+.menu .container1 .box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 #854E4B;
+    background: #854E4B;
+}
+.menu .container1 .box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px #854E4B;
+}
+.menu .container .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu .container1 .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu .container .box:hover .content {
+    color: #fff;
+}
+.menu .container1 .box:hover .content {
+    color: #fff;
+}
+.menu .container .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.menu .container1 .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.menu .container .box .content p {
+    margin: 0;
+    padding: 0;
+}
+.menu .container1 .box .content p {
+    margin: 0;
+    padding: 0;
+}
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.tab4 {
+    tab-size: 8;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+
+.tabel {
+    background-color: white;
 }
